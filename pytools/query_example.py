@@ -38,7 +38,8 @@ queries = [
     ["EXISTS", "0"]
 ]
 
-# print(process_queries(queries))  # Output: ['true', 'true', 'true', 'false', 'false', 'true']
+print(solution(queries))  
+# Output: ['', '', '', '', 'true', 'true', 'true', 'false', 'false', 'false']
 
 L = solution(queries)
 
@@ -48,3 +49,5 @@ for i in range(len(L)): #the variable i will assume the values from 0 to length 
     if i < len(L)-1:
         print(',', end=' ') #if i is not the index of the last element then display a comma after it
 print(']') #just to print the closing third bracket ]
+
+# Output: ["", "", "", "", "true", "true", "true", "false", "false", "false"]
